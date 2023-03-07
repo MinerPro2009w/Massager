@@ -1,0 +1,32 @@
+.Main{
+    background-color: darkgreen;
+    padding: 15px;
+}
+.profile{
+display: grid;
+grid-template-columns: 3fr 6fr 5fr;
+grid-column-gap: 10px;
+text-align: center;
+padding-bottom: 15px;
+}
+.Ava{
+    border: 5px orange solid;
+    border-radius: 100%;
+}
+.post{
+    padding-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+}
+.Mini-avik{
+    width: 60px;
+    border: 2px orange solid;
+    border-radius: 100%;
+}
+.welc{
+    grid-column: 1/3;
+}
+.post-name{
+    grid-column: 2/3;
+    text-align: left;
+}

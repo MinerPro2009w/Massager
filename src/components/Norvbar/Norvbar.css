@@ -1,0 +1,7 @@
+.Norvbar{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
