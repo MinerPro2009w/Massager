@@ -1,6 +1,7 @@
 .Main{
-    background-color: darkgreen;
+    background-color: #1688C8FF;
     padding: 15px;
+    border-radius: 50px;
 }
 .profile{
 display: grid;

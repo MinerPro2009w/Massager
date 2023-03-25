@@ -5,10 +5,15 @@
   width: 75%;
   color: white;
   grid-template-columns: 1fr 5fr;
+  grid-template-rows: 10vh 85vh;
   grid-gap: 20px;
 }
+*{
+  box-sizing:border-box;
+  --MainColor:#5380B4FF; 
+}
 body{
-  background-color:#AF3522FF;
+  background-image: url(./components/img/MessageBackground.jpg);
 }
 .Header{
   grid-area: h;

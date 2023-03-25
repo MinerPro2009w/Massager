@@ -1,15 +1,15 @@
 import Posts from "./../Posts/posts.js"
 import "./Main.css"
-import avatar from "./../img/backrooms-descent.jpg"
-function Main(){
+
+function Main(props){
     return(
         <div className="Main">
             <div className="profile">
-                <img class="Ava" src={avatar}/>
-                <h2 class="Name">Бахарев Матвей</h2>
-                <h2 class="idshnik">ID:89023587</h2>
+                <img className="Ava" src={props.user.avatar}/>
+                <h2 className="Name">{props.user.name}</h2>
+                <h2 className="idshnik">ID:{props.user.id}</h2>
             </div>
-            <Posts></Posts>
+            <Posts posts={props.posts}></Posts>
         </div>
     )
 }

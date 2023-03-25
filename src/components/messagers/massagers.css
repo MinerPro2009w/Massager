@@ -1,0 +1,16 @@
+.EnterMessage{
+    width: 100%;
+    display: flex;
+}
+.MessageInput{
+    width: 95%;
+    height: 50px;
+    font-size: 30px;
+    padding-top: 5px; 
+}
+.Send{
+    height: 50px;
+    width: 5%;
+    /* margin-top: -30000px; */
+    /* margin-left: 885px; */
+}

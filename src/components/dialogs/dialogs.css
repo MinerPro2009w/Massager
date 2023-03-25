@@ -1,11 +1,16 @@
-.Norvbar{
+.dialogs{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-column-gap: 30px;
+}
+.dialogList{
     background-color: #1688C8FF;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 50px;
 }
-.NorvCont{
+.dialogList-container{
     width: 100%;
     height: 10%;
     display: flex;
@@ -13,14 +18,14 @@
     justify-content: space-between;
     padding: 20px;
 }
-.NorvCont a{
+.dialogList-container a{
     text-decoration: none;
     color: white;
 }
-.NorvCont a.active{
+.dialogList-container a.active{
     background-color: #35475CFF;
 }
-.NorvCont a{
+.dialogList-container a{
     padding: 10px 20px;
     border-radius: 50px;
 }

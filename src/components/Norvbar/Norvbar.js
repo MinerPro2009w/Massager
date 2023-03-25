@@ -1,13 +1,14 @@
 import { BrowserRouter, NavLink } from "react-router-dom"
+import "./Norvbar.css"
 function Norvbar(){
     return(
-        <BrowserRouter>
         <div className="Norvbar">
-            <NavLink to="/profile">Профиль</NavLink>
-            <NavLink to="/messages">Сообщения</NavLink>
-            <NavLink to="/friends">Друзья</NavLink>
+            <div className="NorvCont">
+                <NavLink to="/profile">Профиль</NavLink>
+                <NavLink to="/messages">Сообщения</NavLink>
+                <NavLink to="/friends">Друзья</NavLink>
+            </div>
         </div>
-        </BrowserRouter>
     )
 }
 export default Norvbar
