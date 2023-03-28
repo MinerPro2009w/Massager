@@ -12,7 +12,7 @@ function dialogs(props){
                 </div>
 
             </div>
-           <Messages/>    
+           <Messages messagers={props.messages}/>
         </div>
     )
 }

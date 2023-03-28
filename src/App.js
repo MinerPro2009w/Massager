@@ -6,39 +6,7 @@ import { Route,BrowserRouter,Routes } from "react-router-dom"
 import Dialogs from './components/dialogs/dialogs.js'
 import avatar from "./components/img/backrooms-descent.jpg"
 
-function App() {
-  let dialogs = [
-    {
-      name:'Димас',
-      id:634432424
-    },
-    {
-      name:'Денис',
-      id:9564967498
-    },
-    {
-      name:'Мирон',
-      id:1231235653
-    },
-  ]
-
-  let posts = [
-    {
-      avatar:avatar,
-      name:"Матвей",
-      text:"dasdasdsadsdasufkfdlgnflkfjklsnfldskfmdslknfdlsnfdskjnfdsljfndskjfndsljfndskfnds"
-    },
-    {
-      avatar:avatar,
-      name:"Владлен",
-      text:"dasdasdsadsdasufkfdlgnflkfjklsnfldskfmdslknfdlsnfdskjnfdsljfndskjfndsljfndskfnds"
-    },
-    {
-      avatar:avatar,
-      name:"Димас",
-      text:"dasdasdsadsdasufkfdlgnflkfjklsnfldskfmdslknfdlsnfdskjnfdsljfndskjfndsljfndskfnds"
-    },
-  ]
+function App(props) {
   return (
    <div className="wrapper">
     <BrowserRouter>
@@ -54,8 +22,8 @@ function App() {
               }}></Main>
             )
           }}/> */}
-          <Route path="profile" element={<Main user={{name:"Матвей Бахарев",id:8640534,avatar:avatar,posts:posts}}></Main>}/>
-          <Route path="messages" element={<Dialogs chats={dialogs}></Dialogs>}/>
+          <Route path="profile" element={<Main user={props.state.userData} posts = {props.state.postData}></Main>}/>
+          <Route path="messages" element={<Dialogs chats={props.state.dialogData} messages={props.state.messagesData}></Dialogs>}/>
         </Routes>
       </div>
     </BrowserRouter>
