@@ -1,8 +1,9 @@
 import "./message.css"
-function Message(){
+function Message(props){
     return(
         <div className="Message">
-            <h2 className="MessageAll">Привет</h2>
+            <h2 className="MessageAll">{props.message}</h2>
+
         </div>
     )
 }
